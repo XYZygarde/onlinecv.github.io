@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.main-content{
+    scrollbar-width: normal;
+}
+.main-content::-webkit-scrollbar{
+    width: 3px;
+    height: 0;
+}
+.main-content::-webkit-scrollbar-thumb{
+    background-color: #C5C6C7;
+}
+.main-content::-webkit-scrollbar-track{
+    background-color: #1f1f20;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: #272829;
+    overflow-y: hidden;
+}
+
+.main-layout{
+    margin-top: 100px;
+    display: flex;
+    height: 600px;
+    width: 950px;
+    grid-template-rows: (5, 1fr);
+    overflow-x: none;
+    position: relative;
+   
+}
+
+.head{
+    position: fixed;
+    height: 100px;
+    width: 950px;
+    background: #1f1f20;
+    z-index: 90;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+.head-navigation{
+    padding: 40px 0;
+    text-align: center;
+    justify-content: space-around;
+    word-spacing: 25px;
+}
+.head-navigation a{
+    color: #FFF6E0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    width: max-content;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.head-navigation a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.head-navigation a:hover::after{
+    transform: scaleX(1);
+}
+.main-content{
+    top: 100px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: (5, 1fr);
+    height: 600px;
+    width: 950px;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+section{
+    height: 500px;
+    width: 950px;
+    position: relative;
+    z-index: 80;
+    overflow-x: none;
+}
+/* HOME PAGE */ 
+
+.homepage{
+    background: #191919;
+}
+.homepage img{
+    height: 500px;
+    width: 500px;
+    float: left;
+    margin: 0 -50px;
+}
+.homepage h2{
+    color: #FFF6E0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-transform: uppercase;
+    width: 50px;
+    text-align: justify;
+    font-size: 50px;
+    position: absolute;
+    margin: 30px 470px;
+    float: right;
+}
+.homepage p{
+    color: #FFF6E0;
+    position: absolute;
+    margin: 390px 470px;
+    width: 420px;
+    text-align: justify;
+    word-spacing: 3px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ABOUT PAGE */ 
+.aboutpage{
+    background: #FFF6E0;
+}
+.aboutpage h3{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: relative;
+    padding: 35px 40px;
+    font-size: 30px;
+}
+.aboutpage ul{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: absolute;
+    text-align: justify;
+    font-size: 20px;
+    padding: 70px 70px;
+}
+.aboutpage ul li{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    list-style-image: url(photo/personal.png);
+}
+.aboutpage img{
+    height: 250px;
+    width: 250px;
+    margin-top:60px ;
+}
+
+/* BACKGROUND PAGE */ 
+.backgroundpage{
+    background:#191919;
+}
+.backgroundpage img{
+    height: 120px;
+    width: 120px;
+    float: left;
+    padding: 200px 150px;
+    position: relative;
+}
+.backgroundpage h3{
+    color:#FFF6E0;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: relative;
+    padding: 40px 60px;
+    font-size: 30px;
+}
+.schools{
+    position: absolute;
+    display: grid;
+    grid-template-rows: (5, 1fr);
+    color: #FFF6E0;
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin: 90px 480px;
+}
+.schools-child{
+    text-align: justify;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 20px;
+}
+.schools-child h4{
+    word-spacing:3px;
+}
+.schools-child p{
+    font-size: 15px;
+}
+
+/* OBJECTIVE PAGE */ 
+.objectivepage{
+    background: #FFF6E0;
+}
+
+.objectivepage h3{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: relative;
+    padding: 35px 40px;
+    font-size: 30px;
+}
+.objectivepage p{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    float: left;
+    letter-spacing: 1px;
+    padding: 100px 40px;
+}
+.objectivepage img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    padding: 90px 0;
+}
+
+/* Experience page */
+
+.experiencepage{
+    background: #191919;
+}
+.experiencepage h3{
+    color:#FFF6E0;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: absolute;
+    padding: 80px 470px;
+    font-size: 30px;
+}
+.work{
+    position: absolute;
+    display: grid;
+    color: #FFF6E0;
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin: 130px 480px;
+}
+.work-child{
+    text-align: justify;
+    font-family: 'Poppins',sans-serif;
+    margin-bottom: 10px;
+}
+.work-child h4{
+    word-spacing:3px;
+}
+.work-child p{
+    font-size: 15px;
+}
+.experiencepage img{
+    height: 120px;
+    width: 120px;
+    float: left;
+    padding: 200px 150px;
+    position: relative;
+}
+
+/*contact page */
+
+.contactpage{
+    height: 350px;
+    background: #1f1f20; 
+}
+.contactpage h3{
+    color:#FFF6E0;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: relative;
+    padding: 35px 60px;
+    font-size: 20px;
+}
+.contactpage ul{
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    position: absolute;
+    text-align: justify;
+    font-size: 15px;
+    padding: 70px 70px;
+    color: #FFF6E0;
+}
+.contactpage ul li{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    list-style: none;
+}
+.contactpage li:nth-child(1){
+    list-style-image: url(photo/contacttel.png);
+}
+.contactpage li:nth-child(2){
+    list-style-image: url(photo/contactmail.png);
+}
+.contactpage li:nth-child(3){
+    list-style-image: url(photo/contactfb.png);
+}
+.contactpage li:nth-child(4){
+    list-style-image: url(photo/contactinsta.png);
+}
